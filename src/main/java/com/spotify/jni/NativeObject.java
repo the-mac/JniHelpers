@@ -31,7 +31,7 @@ public abstract class NativeObject {
      */
     @SuppressWarnings("UnusedDeclaration")
     @UsedByNativeCode
-    protected long nPtr;
+    public long nPtr;
 
     /**
      * This method is used to invoke C++ destructors and free native resources,

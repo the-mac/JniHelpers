@@ -23,7 +23,7 @@
 #define __JniHelpersTest_h__
 
 #include "JniHelpers.h"
-#define PACKAGE "com/spotify/jni"
+#define PACKAGE "us/the/mac/android/jni/helpers"
 
 using namespace spotify::jni;
 extern ClassRegistry gClasses;

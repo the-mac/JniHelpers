@@ -32,7 +32,7 @@ void PersistedObject::initialize(JNIEnv *env) {
   cacheConstructor(env);
   cacheField(env, "i", kTypeInt);
 #if ANDROID
-  addNativeMethod("destroy", &PersistedObject::nativeDestroy, kTypeVoid, NULL);
+  addNativeMethod("destroy", (void*)&PersistedObject::nativeDestroy, kTypeVoid, NULL);
 #else
   addNativeMethod("destroy", (void*)&PersistedObject::nativeDestroy, kTypeVoid, NULL);
 #endif
